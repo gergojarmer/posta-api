@@ -1,0 +1,7 @@
+{
+  "name": "Posta API",
+  "version": "1.0.0",
+  "description": "Magyar városok és irányítószámaik – Laravel REST API, Sanctum tokenes hitelesítéssel",
+  "title": "Posta API dokumentáció",
+  "url": "http://localhost:8000"
+}

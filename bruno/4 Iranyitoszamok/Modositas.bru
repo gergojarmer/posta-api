@@ -1,0 +1,26 @@
+meta {
+  name: Módosítás (token kell)
+  type: http
+  seq: 8
+}
+
+put {
+  url: {{baseUrl}}/api/iranyitoszamok/{{ujId}}
+  body: json
+  auth: bearer
+}
+
+headers {
+  Accept: application/json
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+    "irsz": "4098",
+    "varosid": 62
+  }
+}

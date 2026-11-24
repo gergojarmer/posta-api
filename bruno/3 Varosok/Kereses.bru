@@ -1,0 +1,15 @@
+meta {
+  name: Keresés (bala)
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/api/varosok?kereses=bala
+  body: none
+  auth: none
+}
+
+headers {
+  Accept: application/json
+}

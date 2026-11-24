@@ -1,0 +1,26 @@
+meta {
+  name: Hibás adat (422 a jó)
+  type: http
+  seq: 11
+}
+
+post {
+  url: {{baseUrl}}/api/iranyitoszamok
+  body: json
+  auth: bearer
+}
+
+headers {
+  Accept: application/json
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+    "irsz": "12",
+    "varosid": 9999
+  }
+}

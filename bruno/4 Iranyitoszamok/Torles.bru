@@ -1,0 +1,19 @@
+meta {
+  name: Törlés (token kell)
+  type: http
+  seq: 9
+}
+
+delete {
+  url: {{baseUrl}}/api/iranyitoszamok/{{ujId}}
+  body: none
+  auth: bearer
+}
+
+headers {
+  Accept: application/json
+}
+
+auth:bearer {
+  token: {{token}}
+}

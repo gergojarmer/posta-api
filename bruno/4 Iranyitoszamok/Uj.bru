@@ -1,0 +1,31 @@
+meta {
+  name: Új (token kell)
+  type: http
+  seq: 7
+}
+
+post {
+  url: {{baseUrl}}/api/iranyitoszamok
+  body: json
+  auth: bearer
+}
+
+headers {
+  Accept: application/json
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+    "irsz": "4099",
+    "varosid": 62
+  }
+}
+
+script:post-response {
+  // az uj rekord id-jet elmenti, hogy a modositas es a torles ezt hasznalja
+  bru.setEnvVar("ujId", res.body.id);
+}

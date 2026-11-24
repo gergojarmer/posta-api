@@ -1,0 +1,15 @@
+meta {
+  name: Keresés + szűrés
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{baseUrl}}/api/iranyitoszamok?kereses=40&megye=10
+  body: none
+  auth: none
+}
+
+headers {
+  Accept: application/json
+}

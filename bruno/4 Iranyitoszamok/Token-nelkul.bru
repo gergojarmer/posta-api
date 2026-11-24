@@ -1,0 +1,22 @@
+meta {
+  name: Új token NÉLKÜL (401 a jó)
+  type: http
+  seq: 10
+}
+
+post {
+  url: {{baseUrl}}/api/iranyitoszamok
+  body: json
+  auth: none
+}
+
+headers {
+  Accept: application/json
+}
+
+body:json {
+  {
+    "irsz": "4097",
+    "varosid": 62
+  }
+}
